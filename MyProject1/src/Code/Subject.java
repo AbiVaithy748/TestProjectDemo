@@ -1,14 +1,26 @@
 package Code;
 
 public class Subject {
+	private int SubID;
 	private String SubName;
 	private int Credits;
 	
-	public Subject (String SubName , int Credits)
+	public Subject (int SubID , String SubName , int Credits)
 	{
 		super();
+		this.SubID = SubID;
 		this.SubName = SubName;
 		this.Credits = Credits;
+	}
+	
+	public int getSubID()
+	{
+		return SubID;
+	}
+	
+	public void setSubID(int SubID)
+	{
+		this.SubID = SubID;
 	}
 	
 	public String getSubName()
